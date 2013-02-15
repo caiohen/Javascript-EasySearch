@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Javscript Simple Search Engine</title>
+		<meta name="author" content="Caio Henrique">
+
+		<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/easysearch.css">
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+		<script type="text/javascript" src="js/easysearch.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				prepareSearch($('#searchBox_1'), {
+					'searchLine' : '#searchTarget_1 tr',
+					'searchSightPoint' : 'td',
+					'fade' : true, //true or false
+					'contrastString' : true	//true or false
+				});
+				prepareSearch($('#searchBox_2'), {
+					'searchLine' : '.searchTarget_2 div.product',
+					'searchSightPoint' : 'div.name, span.price',
+					'fade' : false, //true or false
+					'contrastString' : false	//true or false
+				});
+			});
+		</script>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="demo01">
+				<form class="form-search" action="#demo01">
+					<div class="input-append">
+						<input type="text" id="searchBox_1" class="span2 search-query" placeholder="Search">
+						<button type="btn" class="btn">
+							<i class="icon-search"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<table id="searchTarget_1" class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>#id</th>
+							<th>Name</th>
+							<th>Description</th>
+							<th>E-mail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01</td>
+							<td>Caio Henrique</td>
+							<td>The only</td>
+							<td>developer@caiohen.com</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Claeti de Oliveira</td>
+							<td>Friend of Caio's sister</td>
+							<td>Imaginary friend</td>
+						</tr>
+						<tr>
+							<td>69</td>
+							<td>Aluno Soares</td>
+							<td>Caio's Friend</td>
+							<td>alunotaradao@doEb.com</td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Aluno Maciel</td>
+							<td>Caio's Friend</td>
+							<td>stevewonder@doEb.com</td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Sussman</td>
+							<td>The superHero</td>
+							<td>Sussman@the.guy</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<div class="row" id="demo02">
+				<form class="form-search" action="#demo02">
+					<div class="input-append">
+						<input type="text" id="searchBox_2" class="span2 search-query" placeholder="Search">
+						<button type="btn" class="btn">
+							<i class="icon-search"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="searchTarget_2">
+					<div class="product span3">
+						<img src="http://www.safeway.com/CMS/assets/media/OurBrands/OpenNature/ON_FrozenProducts.jpg" />
+						<div class="name">
+							other
+						</div>
+						<span class="price">10,00</span>
+					</div>
+					<div class="product span3">
+						<img src="http://www.safeway.com/CMS/assets/media/OurBrands/OpenNature/ON_FrozenProducts.jpg" />
+						<div class="name">
+							kind
+						</div>
+						<span class="price">11,00</span>
+					</div>
+					<div class="product span3">
+						<img src="http://www.safeway.com/CMS/assets/media/OurBrands/OpenNature/ON_FrozenProducts.jpg" />
+						<div class="name">
+							of
+						</div>
+						<span class="price">12,00</span>
+					</div>
+					<div class="product span3">
+						<img src="http://www.safeway.com/CMS/assets/media/OurBrands/OpenNature/ON_FrozenProducts.jpg" />
+						<div class="name">
+							search
+						</div>
+						<span class="price">13,00</span>
+					</div>
+					<div class="product span3">
+						<img src="http://www.safeway.com/CMS/assets/media/OurBrands/OpenNature/ON_FrozenProducts.jpg" />
+						<div class="name">
+							result
+						</div>
+						<span class="price">14,00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
