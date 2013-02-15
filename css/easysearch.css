@@ -1,0 +1,38 @@
+.contrastString{
+	background-color: yellow;
+	font-weigth: bold;
+}
+.borderBlack{
+	border: 1px solid black;
+}
+.product{
+	width: 157px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+	padding: 7px;
+	background: #ffedf7;
+	border: 1px solid #E1E1E1;
+	-webkit-transition: box-shadow .3s;
+	-moz-transition: box-shadow .3s;
+	transition: box-shadow .3s;
+	-webkit-box-shadow: 0 0 3px 0 #E9E9E9;
+	-moz-box-shadow: 0 0 3px 0 #E9E9E9;
+	box-shadow: 0 0 3px 0 #E9E9E9;
+}
+.product .image{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-top: 2px;
+	margin-bottom: 4px;
+}
+.product .name{
+	width: 100%;
+	text-align: center;
+}
+.product .price{
+	display: block;
+	font-weigth: bold;
+}
